@@ -1,6 +1,5 @@
 # .csv files (data)
 *.csv
-!data_final.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
