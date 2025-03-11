@@ -20,12 +20,12 @@ def extract_ts(df: pd.DataFrame, step: str='D'):
     
     df = df.copy()
     
-    df.date_visite_diag = pd.to_datetime(df.date_visite_diag)
+    df.date_etablissement_dpe = pd.to_datetime(df.date_etablissement_dpe)
     
     def weighted_avg(sub_df):
         return (sub_df.surface_utile*sub_df.emission_ges).sum()/sub_df.surface_utile.sum()
     
-    df = df.groupby('date_visite_diag').apply(weighted_avg, include_groups=False)
+    df = df.groupby('date_etablissement_dpe').apply(weighted_avg, include_groups=False)
     
     df.sort_index(inplace=True)
     
