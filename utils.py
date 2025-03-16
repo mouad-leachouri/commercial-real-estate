@@ -75,3 +75,15 @@ def extract_vect_ts(df, freq='D'):
 def ttsplit(ts, test_size: float=0.25):
     ts_train, ts_test = train_test_split(ts, test_size=test_size, shuffle=False)
     return ts_train, ts_test
+
+
+# Rolling average
+def rolling_average(df, window: int=10):
+    return df.rolling(window=window, min_periods=1).mean()
+
+
+# Etend train to test
+def extend_train(train, test):
+    test_start = test.index[0]
+    train_extended= pd.concat([train, pd.Series(test.iloc[0], index=[test_start])])
+    return train_extended
