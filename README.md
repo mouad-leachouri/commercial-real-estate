@@ -6,4 +6,6 @@
 >- `data\dpe-v2-tertiaire-2.csv`
 >2. Include the file `mapping_secteur_activite - filtred.csv` inside a directory `utils\`.[^1]
 
+**Link for the presentatoion:** [Commercial Real Estate - Part 1](https://docs.google.com/presentation/d/1MBz0mA9qUGmMUVxbOIECxpq0uQIDx2aWFu6Id4hWSns/edit?usp=sharing)
+
 [^1]: Create it if it doesn't already exist.
