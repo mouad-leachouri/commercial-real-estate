@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read preprocessed data
-data = pd.read_csv('data_final.csv', index_col='Unnamed: 0')
+data = pd.read_csv('final_data.csv', index_col='Unnamed: 0')
 
 # Split data according to category
 data_admin = data[data.sect_act_admin == 1.0].reset_index(drop=True)
