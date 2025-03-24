@@ -87,3 +87,12 @@ def extend_train(train, test):
     test_start = test.index[0]
     train_extended= pd.concat([train, pd.Series(test.iloc[0], index=[test_start])])
     return train_extended
+
+
+# Singular points of a graph
+def singularities(x, y, tol):
+    singu = []
+    for i in range(1, len(y)-1):
+        if abs(((y[i+1] - y[i])/(x[i+1] - x[i])) - ((y[i] - y[i-1])/(x[i] - x[i-1])))>tol:
+            singu.append([x[i], y[i]])
+    return singu
