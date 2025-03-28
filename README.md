@@ -25,6 +25,6 @@ cd commercial-real-estate
 ```
 
 ## Links
-**Link for the presentatoion:** [Commercial Real Estate - Part 1](https://docs.google.com/presentation/d/1cXeATyDPBea_HoZfHvkXEK8rSgYQsnIs82DDm8zaG5w/edit?usp=sharing)
+**Link for the presentatoion:** [Project: Commercial Real Estate](https://docs.google.com/presentation/d/1cXeATyDPBea_HoZfHvkXEK8rSgYQsnIs82DDm8zaG5w/edit?usp=sharing)
 
 [^1]: Create it if it doesn't already exist.
